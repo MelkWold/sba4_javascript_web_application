@@ -7,14 +7,20 @@
 - Use fetch and/or Axios to interact with an external web API.
 - Organize files using modules and imports.
 
-``Tools used: HTML, CSS, JavaScript, Bootstrap``
+``Tools used:``
+- HTML, 
+- CSS, 
+- JavaScript, 
+- Bootstrap``
+
 ``API used: ``
+- 
 
 ``Project description``
 
 `The purpose of the project is to provide users with the ability to do XYZZZZZ. Using the web application, users will be able to access the XYZZZZZZ data, filter the data by XYZZZZ and do YXYZZZZ `
 
-```Reflection (Optional)```
+``Reflection (Optional)``
 ```What could you have done differently during the planning stages of your project to make the execution easier?```
 
 ```Were there any requirements that were difficult to implement? What do you think would make them easier to implement in future projects?```
