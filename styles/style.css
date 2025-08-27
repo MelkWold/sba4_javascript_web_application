@@ -3,7 +3,25 @@ body, html {
     height: 100%;
     background-color: rgba(255, 228, 196, 0.658);
     font-size: 30px;
-    display: flex;
-    flex-wrap: flex;
 }
 
+#navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    background-color: azure;
+}
+button {
+    border:none;
+    margin:10px;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    width:150px;
+
+}
+
+#container {
+    height: 80%
+}
