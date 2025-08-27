@@ -13,10 +13,16 @@ h1, h2, h3, h4, h5, h6 {
     display:block;
     text-align: center;
     height: 20%;
-    background-color: azure;
     margin:20px;
     padding: 30px;
 }
+
+#navDiv {
+    display: flex;
+    background-color: azure;
+    justify-content: center;
+}
+
 button {
     margin:10px;
     padding: 10px;
@@ -25,7 +31,11 @@ button {
     width:150px;
     height: 50px;
     border-radius: 25px;
+}
 
+button:hover {
+    background-color: white;
+    color: black;
 }
 
 #authorSearchBar {
