@@ -59,6 +59,9 @@ button {
     font-size: 25px;
     color: rgb(2, 2, 107);
     margin-left: 65px;
+    margin-right: 65px;
+    text-decoration: underline;
+    gap: 25px;
 }
 
 #mainP {
