@@ -11,20 +11,31 @@
 </head>
 <body id = "body">
     <nav id = "navbar">
-        <h1>Book searcher</h1>
-        <p>Find all the books by your favorite authors</p>
+        <h1>Book Miner</h1>
+        <h3>Find all the books by your favorite authors</h3>
         
     </nav>
     
 <!--Input field for searching an author-->
-<h5>Enter the name of the author to search the books by them</h5>
 
 <form id = "authorSearchForm">
-    <input type="search" id = "authorSearchBar" name = "authorSearch" placeholder ="Enter an author" autofocus>
+    <input type="search" id = "authorSearchBar" name = "authorSearch" placeholder ="Enter author's fullname" autofocus>
     <button type = 'submit'>Search</button>
 </form>
-    <br>
+    
+<p id="mainP" >For some authors, no books are listed. We are working on fixing this problem. Please try another author or pick any author from the list below: </p>
 
+<ul id ="testAuthorList">
+    <li>Maya Angelou</li>
+    <li>William Shakespeare</li>
+    <li>Dan Brown</li>
+    <li>Stephen King</li>
+    <li>Charles Dickens</li>
+    <li></li>
+    <li></li>
+</ul>
+    
+<br>
 
 <div id = "container">
         
