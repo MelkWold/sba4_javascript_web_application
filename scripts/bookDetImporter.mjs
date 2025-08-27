@@ -19,8 +19,8 @@ export async function bookInfoImporter(author) {
                 });  
             }
         }); 
-        
-        return booksByAuthor;
+
+return booksByAuthor;
 
     } catch(err) {
         console.error(`Error: ${err.message}`);

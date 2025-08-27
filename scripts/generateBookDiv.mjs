@@ -2,7 +2,7 @@
 export function generateBookDiv(data) {
     let mainBody = document.getElementById("body");
     let bookContainer = document.getElementById("container");
-    
+    bookContainer.style.display= "flex"
     // clear old content
     bookContainer.innerHTML = "";
 
@@ -14,9 +14,10 @@ export function generateBookDiv(data) {
     data.forEach(book => {
     //create a div element
     let bookDiv = document.createElement("div");
+    let breakPoint = document.createElement("br");
     bookDiv.classList.add("book");
     bookDiv.style.border = "1px solid blue";
-    bookDiv.style.justifyContent = "center";
+    // bookDiv.style.justifyContent = "center";
     bookDiv.style.textAlign= "center";
     bookDiv.style.width ="700px";
     
@@ -42,7 +43,7 @@ export function generateBookDiv(data) {
     bookDiv.append(title, author, year);
     
     bookContainer.appendChild(bookDiv);
-    bookContainer.style.textAlign = "center";
+    bookContainer.appendChild(breakPoint);
 
     mainBody.appendChild(bookContainer);
 

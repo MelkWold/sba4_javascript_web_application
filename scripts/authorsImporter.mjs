@@ -16,7 +16,7 @@ export async function authorImporter() {
                 });  
             }
         }); 
-        
+
         return booksByAuthor;
 
     } catch(err) {
