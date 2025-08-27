@@ -27,7 +27,7 @@ export function generateBookDiv(data) {
 
     //create author element and populate it
     let author = document.createElement("h4");
-    author.textContent = book.author;
+    author.textContent = book.author_name;
 
     //create a p element and populate it
     let year = document.createElement("p");

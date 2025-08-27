@@ -1,17 +1,14 @@
-import axios from "axios";
-
-export async function bookInfoImporter(author) { 
+export async function authorImporter() { 
     
     try {
-        const books = await axios.get(`https://openlibrary.org/search.json?q=${author}`);
-        const booksJson = books.data
-        const bookData = booksJson.docs;
-   
+        const response = await axios.get(`https://openlibrary.org/search.json?q=${author}`);
+        const data = response.data;
+        const bookData = data.docs;
         let booksByAuthor = [];
         bookData.forEach(book => {
             if (book.author_name[0].toLowerCase() === author.toLowerCase()){
                 booksByAuthor.push({
-                    "author name": book.author_name[0],
+                    "author_name": book.author_name[0],
                     "title": book.title,
                     "year": book.first_publish_year,
                     "author key": book.author_key[0],
@@ -24,5 +21,6 @@ export async function bookInfoImporter(author) {
 
     } catch(err) {
         console.error(`Error: ${err.message}`);
+        return [];
     }  
 }
